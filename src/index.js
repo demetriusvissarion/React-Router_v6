@@ -5,7 +5,9 @@ import { store } from "./app/store";
 import { Provider } from "react-redux";
 import * as serviceWorker from "./serviceWorker";
 
-const container = document.getElementById('root');
+import "./app/style.css";
+
+const container = document.getElementById("root");
 const root = ReactDOM.createRoot(container);
 root.render(
   <React.StrictMode>

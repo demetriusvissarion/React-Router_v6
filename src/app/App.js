@@ -10,19 +10,21 @@ import Profile from "../components/Profile";
 import EditProfileForm from "../components/EditProfileForm";
 import Root from "../components/Root";
 
+import "./style.css";
+
 import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
+  RouterProvider,
 } from "react-router-dom";
-import { RouterProvider } from "react-router-dom";
 
-import "./App.css";
-
-const router = (
-  <Route path="/" element={<Root />}>
-    <Route path="about" element={<About />} />
-  </Route>
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Root />}>
+      <Route path="about" element={<About />} />
+    </Route>
+  )
 );
 
 function App() {

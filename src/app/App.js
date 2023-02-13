@@ -10,7 +10,7 @@ import Profile from "../components/Profile";
 import EditProfileForm from "../components/EditProfileForm";
 import Root from "../components/Root";
 
-import "./style.css";
+import "./App.css";
 
 import {
   createBrowserRouter,
@@ -23,6 +23,10 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
       <Route path="about" element={<About />} />
+      <Route path="sign-up" element={<SignUp />} />
+      <Route path="articles" element={<Articles />} />
+      <Route path="categories" element={<Categories />} />
+      <Route path="profile" element={<Profile />} />
     </Route>
   )
 );
